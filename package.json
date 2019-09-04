@@ -1,0 +1,61 @@
+[
+  {
+    "description": "  In order to do maths\n  As a developer\n  I want to increment variables",
+    "keyword": "Feature",
+    "name": "Simple maths",
+    "line": 1,
+    "id": "simple-maths",
+    "tags": [],
+    "uri": "features\\simple_math.feature",
+    "elements": [
+      {
+        "id": "simple-maths;easy-maths",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "easy maths",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "a variable set to 1",
+            "match": {
+              "location": "features\\support\\steps.js:4"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I increment the variable by 1",
+            "match": {
+              "location": "features\\support\\steps.js:8"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "the variable should contain 2",
+            "match": {
+              "location": "features\\support\\steps.js:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
