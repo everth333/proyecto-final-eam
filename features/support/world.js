@@ -41,6 +41,10 @@ class CustomWorld {
     this.monto = this.monto + p_monto;
   }
 
+  setSalida(p_monto) {
+    this.monto = this.monto - p_monto;
+  }
+
   getSaldo() {
     return this.monto;
   }

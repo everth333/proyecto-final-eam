@@ -38,8 +38,7 @@
               "location": "features\\support\\steps_billetera.js:13"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -51,7 +50,8 @@
               "location": "features\\support\\steps_billetera.js:20"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -64,7 +64,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1000000
+              "duration": 2000000
             }
           }
         ]
@@ -119,11 +119,10 @@
             "line": 16,
             "name": "se tendra un saldo de 777",
             "match": {
-              "location": "features\\support\\steps_billetera.js:54"
+              "location": "features\\support\\steps_billetera.js:53"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -178,11 +177,243 @@
             "line": 21,
             "name": "se tendra un saldo de 888",
             "match": {
-              "location": "features\\support\\steps_billetera.js:54"
+              "location": "features\\support\\steps_billetera.js:53"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "gestionar-la-billetera;registrar-salidas",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "Registrar Salidas",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Iniciar cuenta en saldo 0",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:5"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "se encuentre habilitada la billetera para salidas",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:59"
             },
             "result": {
               "status": "passed",
               "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "en la billetera se registra una salida de 111 y se tiene un saldo de 777",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:64"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "se tendra un saldo de 666",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:53"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "gestionar-la-billetera;registrar-salidas",
+        "keyword": "Scenario",
+        "line": 28,
+        "name": "Registrar Salidas",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Iniciar cuenta en saldo 0",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:5"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 29,
+            "name": "se encuentre habilitada la billetera para salidas",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:59"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "en la billetera se registra una salida de 111 y se tiene un saldo de 666",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:64"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "se tendra un saldo de 555",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:53"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "gestionar-la-billetera;registrar-ingresos-negativos",
+        "keyword": "Scenario",
+        "line": 33,
+        "name": "Registrar Ingresos Negativos",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Iniciar cuenta en saldo 0",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:5"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 34,
+            "name": "se encuentre habilitada la billetera para ingresos negativo",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:73"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 35,
+            "name": "en la billetera se registra un ingreso negativo de -111 y se tiene un saldo de 777",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:78"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "se tendra un saldo de 777",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:53"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "gestionar-la-billetera;registrar-salidas-con-monto-mayor-al-saldo",
+        "keyword": "Scenario",
+        "line": 38,
+        "name": "Registrar Salidas con Monto Mayor al Saldo",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Iniciar cuenta en saldo 0",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:5"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 39,
+            "name": "se encuentre habilitada la billetera para salidas con menos saldos",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:89"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "en la billetera se registra una salida de 111 con menor saldos ya que se tiene un saldo de 100",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:94"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "se tendra un saldo de 100",
+            "match": {
+              "location": "features\\support\\steps_billetera.js:53"
+            },
+            "result": {
+              "status": "passed"
             }
           }
         ]
@@ -227,7 +458,8 @@
               "location": "features\\support\\steps_simple_math.js:8"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
