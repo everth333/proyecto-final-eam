@@ -38,7 +38,8 @@
               "location": "features\\support\\steps_billetera.js:13"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -63,7 +64,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2000000
+              "duration": 1000000
             }
           }
         ]
@@ -97,7 +98,8 @@
               "location": "features\\support\\steps_billetera.js:38"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -109,8 +111,7 @@
               "location": "features\\support\\steps_billetera.js:45"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -169,8 +170,7 @@
               "location": "features\\support\\steps_billetera.js:45"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -182,7 +182,8 @@
               "location": "features\\support\\steps_billetera.js:53"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -332,8 +333,7 @@
               "location": "features\\support\\steps_billetera.js:73"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -357,8 +357,7 @@
               "location": "features\\support\\steps_billetera.js:53"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -475,7 +474,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 37000000
             }
           },
           {
@@ -487,7 +486,8 @@
               "location": "features\\support\\register_billetera.js:41"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -517,7 +517,7 @@
             "line": 6,
             "name": "Dados datos de billetera nombre: \"Everth A\"",
             "match": {
-              "location": "features\\support\\show_billetera.js:9"
+              "location": "features\\support\\show_billetera.js:13"
             },
             "result": {
               "status": "passed"
@@ -527,9 +527,9 @@
             "arguments": [],
             "keyword": "And ",
             "line": 7,
-            "name": "ingreso: 777",
+            "name": "ingreso1: 777",
             "match": {
-              "location": "features\\support\\show_billetera.js:14"
+              "location": "features\\support\\show_billetera.js:17"
             },
             "result": {
               "status": "passed"
@@ -539,21 +539,22 @@
             "arguments": [],
             "keyword": "And ",
             "line": 8,
-            "name": "ingreso: 111",
+            "name": "ingreso2: 111",
             "match": {
-              "location": "features\\support\\show_billetera.js:14"
+              "location": "features\\support\\show_billetera.js:22"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 9,
-            "name": "salida:88",
+            "name": "salida1:88",
             "match": {
-              "location": "features\\support\\show_billetera.js:19"
+              "location": "features\\support\\show_billetera.js:27"
             },
             "result": {
               "status": "passed"
@@ -565,14 +566,96 @@
             "line": 10,
             "name": "Navego a la pagina principal",
             "match": {
-              "location": "features\\support\\show_billetera.js:24"
+              "location": "features\\support\\show_billetera.js:32"
             },
             "result": {
               "status": "passed",
               "duration": 1000000
             }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "Llenar el campo de nombre",
+            "match": {
+              "location": "features\\support\\show_billetera.js:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "Llenar el campo de ingreso uno",
+            "match": {
+              "location": "features\\support\\show_billetera.js:41"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "Llenar el campo de ingreso dos",
+            "match": {
+              "location": "features\\support\\show_billetera.js:46"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 14,
+            "name": "Llenar el campo de salida uno",
+            "match": {
+              "location": "features\\support\\show_billetera.js:50"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "Hacer click en el boton Show",
+            "match": {
+              "location": "features\\support\\show_billetera.js:54"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "Se debe mostrar la cadena \"Everth A - Saldo 800\"",
+            "match": {
+              "location": "features\\support\\show_billetera.js:58"
+            },
+            "result": {
+              "status": "passed"
+            }
           }
         ]
+      },
+      {
+        "id": "mostrar-saldo-de-la-billetera;se-tiene-datos-validos-y-se-muestran-correctamente",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "Se tiene datos validos y se muestran correctamente",
+        "tags": [],
+        "type": "scenario",
+        "steps": []
       }
     ]
   },
@@ -614,8 +697,7 @@
               "location": "features\\support\\steps_simple_math.js:8"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
