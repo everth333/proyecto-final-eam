@@ -50,8 +50,7 @@
               "location": "features\\support\\steps_billetera.js:20"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -110,7 +109,8 @@
               "location": "features\\support\\steps_billetera.js:45"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -122,7 +122,8 @@
               "location": "features\\support\\steps_billetera.js:53"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -168,7 +169,8 @@
               "location": "features\\support\\steps_billetera.js:45"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -214,8 +216,7 @@
               "location": "features\\support\\steps_billetera.js:59"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {
@@ -331,7 +332,8 @@
               "location": "features\\support\\steps_billetera.js:73"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           },
           {
@@ -355,7 +357,8 @@
               "location": "features\\support\\steps_billetera.js:53"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -414,6 +417,159 @@
             },
             "result": {
               "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Como un cliente de API WEB (no humano)\n    Requiero registrar un movimiento en la billetera",
+    "keyword": "Feature",
+    "name": "Registra un movimiento en la billetera",
+    "line": 1,
+    "id": "registra-un-movimiento-en-la-billetera",
+    "tags": [],
+    "uri": "features\\register_billetera.feature",
+    "elements": [
+      {
+        "id": "registra-un-movimiento-en-la-billetera;registro-de-un-movimiento",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Registro de un movimiento",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Los siguientes datos ingreso con el MONTO 10 para la billetera a NOMBRE \"Everth A\" con un SALDO 10",
+            "match": {
+              "location": "features\\support\\register_billetera.js:9"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "Preparo el JSON de los datos",
+            "match": {
+              "location": "features\\support\\register_billetera.js:18"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Hago un request POST hacia el url user con los datos",
+            "match": {
+              "location": "features\\support\\register_billetera.js:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "Recibo una respuesta con http status 201",
+            "match": {
+              "location": "features\\support\\register_billetera.js:41"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "description": "    Como Usuario Final (humano)\n    Quiero ver el saldo de la billetera",
+    "keyword": "Feature",
+    "name": "Mostrar saldo de la billetera",
+    "line": 1,
+    "id": "mostrar-saldo-de-la-billetera",
+    "tags": [],
+    "uri": "features\\show_billetera.feature",
+    "elements": [
+      {
+        "id": "mostrar-saldo-de-la-billetera;se-tiene-datos-validos-y-se-muestran-correctamente",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Se tiene datos validos y se muestran correctamente",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "Dados datos de billetera nombre: \"Everth A\"",
+            "match": {
+              "location": "features\\support\\show_billetera.js:9"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "ingreso: 777",
+            "match": {
+              "location": "features\\support\\show_billetera.js:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "ingreso: 111",
+            "match": {
+              "location": "features\\support\\show_billetera.js:14"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "salida:88",
+            "match": {
+              "location": "features\\support\\show_billetera.js:19"
+            },
+            "result": {
+              "status": "passed"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 10,
+            "name": "Navego a la pagina principal",
+            "match": {
+              "location": "features\\support\\show_billetera.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
